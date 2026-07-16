@@ -6,24 +6,24 @@ const projects = [
     description:
       "Interactive business dashboard built using SQL, Tableau and Python for business insights.",
     tech: "SQL • Tableau • Python",
-    github: "#",
-    demo: "#",
+   github:"https://github.com/kalyanpippera-ui/kalyan-portfolio",
+demo:"https://kalyan-portfolio-seven.vercel.app",
   },
   {
     title: "Nursery React App",
     description:
       "E-commerce plant store built using React, Tailwind CSS and Firebase.",
     tech: "React • Tailwind • Firebase",
-    github: "#",
-    demo: "#",
+  github:"https://github.com/kalyanpippera-ui/kalyan-portfolio",
+demo:"https://kalyan-portfolio-seven.vercel.app",
   },
   {
     title: "Movie Booking App",
     description:
       "Movie ticket booking web application with responsive UI.",
     tech: "React • JavaScript",
-    github: "#",
-    demo: "#",
+   github:"https://github.com/kalyanpippera-ui/kalyan-portfolio",
+demo:"https://kalyan-portfolio-seven.vercel.app",
   },
 ];
 
@@ -41,10 +41,16 @@ function Projects() {
           {projects.map((project) => (
             <motion.div
               key={project.title}
-              whileHover={{ y: -10 }}
-              className="bg-slate-900 rounded-3xl p-8 border border-cyan-500/20 hover:border-cyan-400 transition"
-            >
-
+             whileHover={{
+                 y: -12,
+                 scale: 1.02,
+                            }}
+       className="bg-slate-900 rounded-3xl overflow-hidden p-6 border border-cyan-500/20 hover:border-cyan-400 hover:shadow-[0_0_35px_rgba(34,211,238,0.25)] transition duration-300"            >
+       <img
+        src={project.image}
+        alt={project.title}
+        className="w-full h-52 object-cover rounded-2xl mb-6"
+       />
               <h3 className="text-2xl font-bold mb-4">
                 {project.title}
               </h3>
@@ -53,27 +59,17 @@ function Projects() {
                 {project.description}
               </p>
 
-              <p className="text-cyan-400 font-semibold mb-8">
-                {project.tech}
-              </p>
+        <div className="flex flex-wrap gap-2 mb-8">
+               {project.tech.split(" • ").map((skill) => (
+             <span
+               key={skill}
+               className="px-3 py-1 text-sm bg-cyan-400/10 border border-cyan-400/20 text-cyan-400 rounded-full"
+             >
+            {skill}
+            </span>
+              ))}
+          </div>
 
-              <div className="flex gap-4">
-
-                <a
-                  href={project.github}
-                  className="bg-cyan-400 text-slate-900 px-5 py-2 rounded-lg font-semibold"
-                >
-                  GitHub
-                </a>
-
-                <a
-                  href={project.demo}
-                  className="border border-cyan-400 text-cyan-400 px-5 py-2 rounded-lg"
-                >
-                  Live Demo
-                </a>
-
-              </div>
 
             </motion.div>
           ))}

@@ -9,7 +9,22 @@
 html {
   scroll-behavior: smooth;
 }
+::selection{
+  background:#22d3ee;
+  color:#020617;
+}
+::-webkit-scrollbar{
+  width:10px;
+}
 
+::-webkit-scrollbar-track{
+  background:#020617;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#22d3ee;
+  border-radius:20px;
+}
 body {
   font-family: 'Poppins', sans-serif;
   background: #020617;
