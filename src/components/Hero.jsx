@@ -1,7 +1,6 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-
 function Hero() {
   return (
     <section className="min-h-screen bg-slate-950 relative overflow-hidden flex items-center">
@@ -26,19 +25,19 @@ function Hero() {
           <h1 className="text-5xl md:text-6xl lg:text-7x1 font-extrabold leading-tight mb-5 bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text">
             Kalyan Pippera
           </h1>
-
-          <TypeAnimation
-             sequence={[
-            "Data Analyst", 2000,
-            "Power BI Developer", 2000,
-            "SQL Specialist", 2000,
-            "React Developer", 2000,
-            ]}
-          wrapper="h2"
-          speed={50}
-          repeat={Infinity}
-          className="text-2xl md:text-3xl font-semibold text-cyan-400 mb-6"
-          />
+<TypeAnimation
+  sequence={[
+    "Data Analyst", 2000,
+    "Power BI Developer", 2000,
+    "SQL Specialist", 2000,
+    "React Developer", 2000,
+  ]}
+  wrapper="h2"
+  speed={50}
+  repeat={Infinity}
+  className="text-2xl md:text-3xl font-semibold text-cyan-400 mb-6"
+/>
+        
 
         <p className="text-gray-400 text-lg leading-8 max-w-xl mb-10">
            Transforming complex data into actionable business insights using
