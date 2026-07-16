@@ -9,8 +9,7 @@ function Hero() {
       <div className="absolute w-96 h-96 bg-cyan-500/20 blur-[120px] rounded-full top-20 right-20"></div>
       <div className="absolute w-72 h-72 bg-blue-600/20 blur-[120px] rounded-full bottom-10 left-10"></div>
 
-      <div className="max-w-7xl mx-auto px-8 lg:px-12 grid lg:grid-cols-2 gap-16 items-center">
-
+     <div className="max-w-7xl mx-auto px-8 lg:px-12 grid lg:grid-cols-2 gap-24 items-center">
         {/* Left Section */}
         <motion.div
           initial={{ opacity: 0, x: -60 }}
@@ -38,8 +37,7 @@ function Hero() {
   className="text-2xl md:text-3xl font-semibold text-cyan-400 mb-6"
 />
         
-
-        <p className="text-gray-400 text-lg leading-8 max-w-xl mb-10">
+<p className="text-gray-400 text-lg leading-8 max-w-xl mb-14">
            Transforming complex data into actionable business insights using
           <span className="text-cyan-400 font-semibold"> SQL</span>,
           <span className="text-cyan-400 font-semibold"> Python</span>,
@@ -48,8 +46,7 @@ function Hero() {
             and modern React applications.
         </p>
 
-<div className="grid grid-cols-3 gap-4 max-w-xl mb-10">
-
+<div className="grid grid-cols-3 gap-6 max-w-xl mb-14">
   <div className="bg-slate-900 border border-cyan-500/20 rounded-2xl p-5 text-center">
     <h3 className="text-3xl font-bold text-cyan-400">3+</h3>
     <p className="text-gray-400 text-sm mt-2">Years Experience</p>
@@ -61,8 +58,8 @@ function Hero() {
   </div>
 
   <div className="bg-slate-900 border border-cyan-500/20 rounded-2xl p-5 text-center">
-    <h3 className="text-3xl font-bold text-cyan-400">SQL</h3>
-    <p className="text-gray-400 text-sm mt-2">Power BI • Python</p>
+    <h3 className="text-3xl font-bold text-cyan-400">20+</h3>
+    <p className="text-gray-400 text-sm mt-2">Business Reports</p>
   </div>
 
 </div>

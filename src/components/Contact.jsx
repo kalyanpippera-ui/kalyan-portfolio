@@ -43,7 +43,7 @@ function Contact() {
             href="https://www.linkedin.com/in/kalyan-pippera-bb42aa230/"
             target="_blank"
             rel="noreferrer"
-            className="bg-slate-900 border border-cyan-500/20 rounded-2xl p-6 hover:border-cyan-400 transition"
+            className="bg-slate-900 border border-cyan-500/20 rounded-2xl p-8 hover:border-cyan-400 transition"
           >
             <FaLinkedin className="text-cyan-400 text-3xl mx-auto mb-3" />
             <p className="text-white">LinkedIn</p>

@@ -45,7 +45,7 @@ function Projects() {
                  y: -12,
                  scale: 1.02,
                             }}
-       className="bg-slate-900 rounded-3xl overflow-hidden p-6 border border-cyan-500/20 hover:border-cyan-400 hover:shadow-[0_0_35px_rgba(34,211,238,0.25)] transition duration-300"            >
+       className="bg-slate-900 rounded-3xl p-8 shadow-x1 hover:shadow-cyan-500/20 transition duration-300"            >
        <img
         src={project.image}
         alt={project.title}
